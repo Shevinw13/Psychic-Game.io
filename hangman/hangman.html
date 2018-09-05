@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Hangman Game</title>
+</head>
+
+<body>
+    <h1>The Hangman Game</h1>
+    <div>
+        <p id="directions-text">Press any key to get started!</p>
+        <p id="wins-text"></p>
+        <p id="answer-text"></p>
+        <p id="remaining-guesses-text">Number of guesses remaining: </p>
+        <p id="user-guess-text">Letters already guessed: </p>
+
+    </div>
+
+    <script type="text/javascript">
+
+        // list different words to choose from 
+        var wordArr = ['Shevin', 'Weinstein', 'georgia', 'technology', 'computer', 'development', 'programming', "javascript", 'bootstrap', 'hangman']
+
+        // choose random word from array above
+        var wordPick = wordArr[Math.floor(Math.random() * wordArr.length)];
+
+        // global variables
+        var temp1;
+        var lettersArray = [];
+
+        var directionsText = document.getElementById("directions-text");
+        var winsText = document.getElementById("wins-text");
+        var answerText = document.getElementById("answer-text");
+        var remainingGuessesText = document.getElementById("remaining-guesses-text");
+        var userGuessText = document.getElementById("user-guess-text");
+
+        // putting _ for random word selected in the array 
+        function s () {
+            for (var i = 0; i < wordPick.length; i++) {
+                wordPick[i] = "_";
+            }
+
+          
+
+            }
+        }
+
+    </script>
+</body>
+
+</html>
